@@ -6,7 +6,7 @@ A non-relational DBMS operable from the interactive shell using custom query lan
 * Java 14 or above
 
 ## Getting started
-1. Download the latest jar from [the release page](https://github.com/ericholbert/databaze/releases)
+1. Download the latest jar from the [release page](https://github.com/ericholbert/databaze/releases)
 2. `cd` into the file’s parent directory
 3. Run `java -jar ericholbert.databaze.Main`
 
