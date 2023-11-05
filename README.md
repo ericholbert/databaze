@@ -18,7 +18,7 @@ After running the program, the last database will be loaded. Since we haven’t 
 priddat <database name>
 ```
 to create one.
-![intro](/../main/assets/use_case_01.png)
+![use case 1](/../main/assets/use_case_01.png)
 Now we need to fill in a few records. Every record consists of parameter groups and each parameter group consists of parameters. When creating a record, you have to also specify at least one parameter group within it:
 ```
 pridzaz <parameter group>[ <another parameter group>...]
@@ -28,7 +28,7 @@ Let’s assume that parameter groups will be the same or at least similar in all
 pridzaz -u <parameter group>...
 ```
 After that, you can add a new record using the previous set of parameter groups by simply running `pridzaz`.
-![intro](/../main/assets/use_case_02.png)
+![use case 2](/../main/assets/use_case_02.png)
 Every newly added record is at the same time printed to the terminal. This means that you can now add a new parameter to such a record by running
 ```
 pridpar <parameter group> <parameter>
@@ -46,28 +46,28 @@ Now, if we use the first `pridpar` command, all records with the specified param
 pridpar <record id> <parameter group> <parameter>
 ```
 Let’s populate both records using a combination of the three listed use cases of the `pridpar` command. The result is the following:
-![intro](/../main/assets/use_case_03.png)
+![use case 3](/../main/assets/use_case_03.png)
 As the database grows, the user may find it useful to print its entire content in such a manner that only exclusive elements per record are displayed along with the occurrence counts. This can be done by running
 ```
 naczaz -d
 ```
-![intro](/../main/assets/use_case_04.png)
+![use case 4](/../main/assets/use_case_04.png)
 As we can see, I have created two more records and now I want to make some changes to all of them at once. Since “country” is always the same, I’ll delete the entire parameter group along with its parameters. Then, I’ll add the “sex” parameter group and set it to male for the reason that three of our subjects are male. This of course means that the “Lucy” record should be tweaked a bit afterwards.
 But that’s a lot of typing! Or at least it would be if we were working on a larger scale. What if we find all records with the “-i” flag instead? Now, after running
 ```
 naczaz -i
 ```
 all elements can be manipulated using their indices in square brackets as substitutions, which is much faster.
-![intro](/../main/assets/use_case_05.png)
+![use case 5](/../main/assets/use_case_05.png)
 Let’s introduce two more commands
 ```
 smazskup [id] <parameter group>[, <another parameter group>...]
 pridskup [id] <parameter group>[, <another parameter group>...]
 ```
 and use them to make the first two changes:
-![intro](/../main/assets/use_case_06.png)
+![use case 6](/../main/assets/use_case_06.png)
 Now, let’s find the “Lucy” record and change its “sex” to “female”:
-![intro](/../main/assets/use_case_07.png)
+![use case 7](/../main/assets/use_case_07.png)
 After you are done, don’t forget to run
 ```
 uldat
